@@ -2,6 +2,7 @@
 
 plugins {
     kotlin("jvm") version "2.0.20"
+    kotlin("plugin.jpa") version "1.7.22"
 }
 
 group = "org.example"

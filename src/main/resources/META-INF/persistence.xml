@@ -6,6 +6,7 @@
     <persistence-unit name="unidadMYSQL" transaction-type="RESOURCE_LOCAL">
 
         <class>org.example.Empleado</class>
+        <class>org.example.Departamento</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
@@ -17,7 +18,7 @@
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
             <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+            <property name="hibernate.hbm2ddl.auto" value="create" />
         </properties>
 
     </persistence-unit>
