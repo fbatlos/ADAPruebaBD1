@@ -1,6 +1,8 @@
 package org.example
 
 import jakarta.persistence.Persistence
+import org.example.Ejemplo1.Departamento
+import org.example.Ejemplo1.Empleado
 import java.util.*
 
 fun main() {

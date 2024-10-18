@@ -1,4 +1,4 @@
-﻿package org.example
+﻿package org.example.Ejemplo1
 
 import jakarta.persistence.*
 import java.util.Date
