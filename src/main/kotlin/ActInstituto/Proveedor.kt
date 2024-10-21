@@ -1,6 +1,7 @@
-﻿package org.example.Act1
+﻿package org.example.ActInstituto
 
 import jakarta.persistence.*
+import org.example.Act1.Producto
 
 
 @Entity
@@ -10,8 +11,8 @@ data class Proveedor(
     @Column
     val nome: String,
 
-    @OneToMany(mappedBy = "proveedor")
-    val productos:List<Producto>,
+    @OneToMany(mappedBy = "proveedor", cascade = [CascadeType.ALL])
+    val instituto: List<Instituto>?,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

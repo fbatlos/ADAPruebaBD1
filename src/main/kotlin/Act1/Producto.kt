@@ -1,6 +1,7 @@
 ﻿package org.example.Act1
 
 import jakarta.persistence.*
+import org.example.ActInstituto.Proveedor
 import java.util.Date
 
 @Entity
@@ -21,7 +22,7 @@ data class Producto(
 
     @ManyToOne(cascade = [CascadeType.ALL])
     @JoinColumn(name = "id_Proveedor")
-    val proveedor:Proveedor?,
+    val proveedor: Proveedor?,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -5,9 +5,12 @@
 
     <persistence-unit name="unidadMYSQL" transaction-type="RESOURCE_LOCAL">
 
-        <class>org.example.Act1.Producto</class>
-        <class>org.example.Act1.Proveedor</class>
-        <class>org.example.Act1.Usuario</class>
+        <class>org.example.ActInstituto.Instituto</class>
+        <class>org.example.ActInstituto.Director</class>
+        <class>org.example.ActInstituto.Proveedor</class>
+        <class>org.example.ActInstituto.Departamento</class>
+        <class>org.example.ActInstituto.Inspector</class>
+
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
