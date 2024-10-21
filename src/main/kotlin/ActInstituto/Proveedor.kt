@@ -11,8 +11,13 @@ data class Proveedor(
     @Column
     val nome: String,
 
-    @OneToMany(mappedBy = "proveedor", cascade = [CascadeType.ALL])
-    val instituto: List<Instituto>?,
+    @ManyToMany
+   /* @JoinTable(
+        name = "proveerdor_instituto",
+        joinColumns = [JoinColumn(name = "proveodores_id")],
+        inverseJoinColumns = [JoinColumn(name = "institutos_id")]
+    )*/
+    val institutos: List<Instituto>?,
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

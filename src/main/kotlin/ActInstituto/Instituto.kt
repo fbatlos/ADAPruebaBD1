@@ -17,9 +17,8 @@ data class Instituto(
     @JoinColumn(name = "id_Director")
     val director: Director?,
 
-    @ManyToOne
-    @JoinColumn(name = "id_Proveedor")
-    val proveedor: Proveedor?,
+    @ManyToMany
+    val proveedor: List<Proveedor>?,
 
     @ManyToOne(cascade = [CascadeType.ALL])
     @JoinColumn(name = "id_Departamento")

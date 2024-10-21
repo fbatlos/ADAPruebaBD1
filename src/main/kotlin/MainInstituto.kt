@@ -15,8 +15,8 @@ fun main() {
     val proveedor = Proveedor(nome = "Tortugas S.A",null)
     val departamento = Departamento(nombre = "Salmon",null)
     val inspector = Inspector(nombre = "Luis", apellido = "Beckan", dni = "87654321Q",instituto = null)
-    val instituto = Instituto(nombre = "IES PAPA" , director = director , proveedor = proveedor, departamento = departamento, inspector = null)
-    val instituto2 = Instituto(nombre = "IES Salmon", director = director2, proveedor = proveedor, departamento = departamento, inspector = inspector)
+    val instituto = Instituto(nombre = "IES PAPA" , director = director , proveedor = listOf(proveedor), departamento = departamento, inspector = null)
+    val instituto2 = Instituto(nombre = "IES Salmon", director = director2, proveedor = listOf(proveedor), departamento = departamento, inspector = inspector)
 
     em.persist(instituto)
     em.persist(instituto2)
